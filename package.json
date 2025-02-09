@@ -1,6 +1,6 @@
 {
   "name": "mock-services",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "author": "",
   "license": "ISC",
@@ -9,10 +9,12 @@
   },
   "scripts": {
     "start": "node --harmony index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "release": "standard-version"
   },
   "description": "",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "standard-version": "^9.5.0"
   }
 }
