@@ -8,7 +8,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
 app.get("/data/:userid", (req, res) => {
-  console.log("new request", req.params, req.query);
+  console.info("new request", req.params, req.query);
   const { userid } = req.params;
   const users = {
     "avi@mapcolonies.net": {
@@ -24,7 +24,7 @@ app.get("/data/:userid", (req, res) => {
 });
 
 app.post("/NLP_ANALYSES", (req, res) => {
-  console.log(req.body);
+  console.info(req.body);
   if (
     !req.body.tokens?.find(
       (token) =>
