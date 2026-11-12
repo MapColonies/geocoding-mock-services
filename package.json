@@ -1,18 +1,20 @@
 {
   "name": "mock-services",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "main": "index.js",
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@huggingface/tokenizers": "^0.2.0",
     "express": "^4.19.2"
   },
   "scripts": {
     "start": "node --harmony index.js",
     "dev": "nodemon index.js",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "node --test test/"
   },
-  "description": "",
+  "description": "Mock services for MapColonies geocoding: the NLP token-type analyser (real XLM-R tokenizer) and the user-data service",
   "devDependencies": {
     "nodemon": "^3.1.7",
     "standard-version": "^9.5.0"
